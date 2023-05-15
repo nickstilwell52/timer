@@ -4,7 +4,7 @@ if (args.length === 0) {
   return;
 }
 
-const timer = function([newTimer,...timers]) {
+const timer = function([newTimer, ...timers]) {
   let remainingTimers = timers.flat();
   if (newTimer.length > 0) {
     if (typeof +newTimer === 'number') {
